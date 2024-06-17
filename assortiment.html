@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="images/musor.ico" rel="shortcut icon" type="image/x-icon" />
+	<title>Сайт</title>
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+	<!-- ---------------- -->
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/assor.css">
+
+</head>
+<body>
+<div class="wrapper">
+
+	<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+            <span class="icon-container"><img src="icon.png" alt="Иконка" class="icon"></span> <!-- Иконка в отдельном контейнере -->
+            Магнит
+        </a>
+        <div class="navbar-wrap">
+            <ul class="navbar-menu">
+                <li><a href="assortiment.html">Вакансии</a></li>
+            </ul>
+            <a href="forma.html" class="callback">Оставить заявку</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+	<input type="radio" id="All" name="categories" value="All" checked>
+	<input type="radio" id="mag" name="categories" value="mag">
+	<input type="radio" id="sklad" name="categories" value="sklad">
+	<input type="radio" id="office" name="categories" value="office">
+	<input type="radio" id="carier" name="categories" value="carier">
+	<input type="radio" id="expless" name="categories" value="expless">
+	<input type="radio" id="fast" name="categories" value="fast">
+	<input type="radio" id="night" name="categories" value="night">
+
+	<ol class="filters">
+  <li>
+    <label for="All">All</label>
+  </li>
+  <li>
+    <label for="mag">Магазин</label>
+  </li>
+  <li>
+    <label for="sklad">Склад</label>
+  </li>
+  <li>
+    <label for="office">Офис</label>
+  </li>
+  <li>
+    <label for="carier">Карьерный рост</label>
+  </li>
+  <li>
+    <label for="expless">Без опыта</label>
+  </li>
+  <li>
+    <label for="fast">Быстро устроим</label>
+  </li>
+  <li>
+    <label for="night">Работа в ночь</label>
+  </li>
+	</ol>
+	<ol class="posts">
+ 	<li class="post"  data-category="mag expless fast carier">
+    <h2><a class="ashka" href="#popup"><strong>Продавец-кассир</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 30.000₽ до 35.000₽</p>
+    <p><strong>График работы:</strong> сменный</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag5">Без опыта</li>
+        <li class="tag6">Быстро устроим</li>
+        <li class="tag4">Карьерный рост</li>
+    </ul>
+</li>
+<li class="post" data-category="mag office carier">
+    <h2><a class="ashka" href="#popup2"><strong>Менеджер по продажам</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 40.000₽ до 45.000₽</p>
+    <p><strong>График работы:</strong> полный рабочий день</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag3">Офис</li>
+        <li class="tag4">Карьерный рост</li>
+    </ul>
+</li>
+<li class="post" data-category="mag sklad fast">
+    <h2><a class="ashka" href="#popup"><strong>Уборщик</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 25.000₽ до 32.000₽</p>
+    <p><strong>График работы:</strong> неполный рабочий день</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag2">Склад</li>
+        <li class="tag6">Быстро устроим</li>
+    </ul>
+</li>
+<li class="post" data-category="mag expless fast carier">
+    <h2><a class="ashka" href="#popup"><strong>Продавец-консультант</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 35.000₽ до 40.000₽</p>
+    <p><strong>График работы:</strong> сменный</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag5">Без опыта</li>
+        <li class="tag6">Быстро устроим</li>
+        <li class="tag4">Карьерный рост</li>
+    </ul>
+</li>
+<li class="post" data-category="mag night">
+    <h2><a class="ashka" href="#popup"><strong>Пекарь</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 30.000₽ до 32.000₽</p>
+    <p><strong>График работы:</strong> ночные смены</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag7">Работа в ночь</li>
+    </ul>
+</li>
+<li class="post" data-category="mag expless fast">
+    <h2><a class="ashka" href="#popup"><strong>Мясник-разделочник</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 40.000₽ до 43.000₽</p>
+    <p><strong>График работы:</strong> полный рабочий день</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag5">Без опыта</li>
+        <li class="tag6">Быстро устроим</li>
+    </ul>
+</li>
+<li class="post" data-category="sklad expless carier">
+    <h2><a class="ashka" href="#popup"><strong>Оператор склада</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 35.000₽ до 40.000₽</p>
+    <p><strong>График работы:</strong> сменный</p>
+    <ul class="post-categories">
+        <li class="tag2">Склад</li>
+        <li class="tag5">Без опыта</li>
+        <li class="tag4">Карьерный рост</li>
+    </ul>
+</li>
+<li class="post" data-category="office carier">
+    <h2><a class="ashka" href="#popup"><strong>Секретарь-референт</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 30.000₽ до 33.000₽</p>
+    <p><strong>График работы:</strong> полный рабочий день</p>
+    <ul class="post-categories">
+        <li class="tag3">Офис</li>
+        <li class="tag4">Карьерный рост</li>
+    </ul>
+</li>
+<li class="post" data-category="mag expless fast carier">
+    <h2><a class="ashka" href="#popup"><strong>Кассир-расчетчик</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 35.000₽ до 39.000₽</p>
+    <p><strong>График работы:</strong> сменный</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag5">Без опыта</li>
+        <li class="tag6">Быстро устроим</li>
+        <li class="tag4">Карьерный рост</li>
+    </ul>
+</li>
+<li class="post" data-category="mag fast">
+    <h2><a class="ashka" href="#popup"><strong>Повар</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 40.000₽ до 44.000₽</p>
+    <p><strong>График работы:</strong> полный рабочий день</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag6">Быстро устроим</li>
+    </ul>
+</li>
+<li class="post" data-category="mag sklad expless night">
+    <h2><a class="ashka" href="#popup"><strong>Мерчендайзер</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 35.000₽ до 40.000₽</p>
+    <p><strong>График работы:</strong> сменный</p>
+    <ul class="post-categories">
+        <li class="tag1">Магазин</li>
+        <li class="tag2">Склад</li>
+        <li class="tag5">Без опыта</li>
+        <li class="tag7">Работа в ночь</li>
+    </ul>
+</li>
+<li class="post" data-category="sklad expless night fast">
+    <h2><a class="ashka" href="#popup"><strong>Упаковщик товаров</strong></a></h2>
+    <p><strong>Зарплата:</strong> от 25.000₽ до 30.000₽</p>
+    <p><strong>График работы:</strong> неполный рабочий день</p>
+    <ul class="post-categories">
+        <li class="tag2">Склад</li>
+        <li class="tag5">Без опыта</li>
+        <li class="tag7">Работа в ночь</li>
+        <li class="tag6">Быстро устроим</li>
+    </ul>
+</li>
+
+
+  
+ <!-- 10 more list items here -->
+	</ol>
+
+
+	
+</div>
+
+	<footer class="footer">
+	<div class="lll">
+	Создано студентом группы 4П9 Белокуровым Артёмом‎
+	</div>
+</footer>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- PopUp'ы -->
+	<div id="popup" class="popup">
+    <a href="#" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close">×</a>
+            <div class="popup_title">Продавец-кассир</div>
+            <img src="prodavets.jpg" alt="Image" class="popup_image">
+            <div class="popup_text">
+                <p><strong>Зарплата:</strong> от 30.000₽ до 35.000₽</p>
+                <p><strong>График работы:</strong> сменный</p>
+                <p>Описание вакансии: Продавец-кассир - это не только профессионал, обеспечивающий оперативную и точную обработку покупок, но и дружелюбный собеседник, готовый ответить на вопросы клиентов и помочь им с выбором. Вакансия Продавец-кассир включает в себя работу на кассе, контроль за наличными и безналичными расчетами, а также поддержание порядка и чистоты в зоне кассовых операций. Если вы энергичны, общительны и готовы присоединиться к команде, ценящей клиентоориентированный подход и высокий уровень сервиса, эта вакансия может быть вашим идеальным выбором.</p>
+            </div>
+            <a href="forma.html" class="popup_button">Оставить заявку</a>
+        </div>
+    </div>
+</div>
+<div id="popup2" class="popup">
+    <a href="#" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close">×</a>
+            <div class="popup_title">Менеджер по продажам</div>
+            <img src="manager.jpg" alt="Image" class="popup_image">
+            <div class="popup_text">
+                <p><strong>Зарплата:</strong> от 40.000₽ до 45.000₽</p>
+                <p><strong>График работы:</strong> полный рабочий день</p>
+                <p>Описание вакансии: Менеджер по продажам - это не только профессионал в области реализации товаров и услуг, но и стратегический партнер, способный выявлять и удовлетворять потребности клиентов. Вакансия Менеджера по продажам включает в себя активный поиск новых клиентов, ведение переговоров, заключение договоров и сопровождение сделок. Ключевыми задачами являются анализ рынка, разработка эффективных стратегий продаж, а также поддержание и развитие долгосрочных отношений с клиентами. Если вы обладаете аналитическим складом ума, отличными коммуникативными навыками и стремитесь к достижению высоких результатов, эта вакансия может стать вашим идеальным карьерным выбором.</p>
+            </div>
+            <a href="forma.html" class="popup_button">Оставить заявку</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,379 @@
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Стили для label */
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Стили для input */
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #999;
+}
+
+/* Стили для textarea */
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  height: 100px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #999;
+}
+
+/* Стили для button */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.6);
+  color: #fff;
+  transition-duration: 0.1s;
+}
+
+button:hover {
+  background-color: rgba(176, 0, 0, 0.6);
+}
+#BGWrapper {
+  height: 92vh;
+  overflow-y: hidden;
+}
+
+
+1
+2
+3
+4
+
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+:root {
+  --black: #1a1a1a;
+  --white: #fff;
+  --green: #49b293;
+}
+ 
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+ 
+.filters * {
+  display: inline-block;
+}
+ 
+.filters label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+ 
+.filters label:hover {
+  background: #FF4040;
+  color: var(--white);
+}
+:root {
+  --black: #1a1a1a;
+  --white: #fff;
+  --green: #49b293;
+}
+ 
+.posts {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(300px, 1fr)); /* 3 элемента в строке с минимальной шириной 300px */
+  flex-wrap: wrap;
+}
+ 
+.posts .post {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+ 
+.posts .post-title {
+  font-size: 1.3rem;
+}
+ 
+.posts .post-title:hover {
+  text-decoration: underline;
+}
+ 
+.posts figcaption {
+  padding: 1rem;
+}
+ 
+.posts .post-categories {
+  margin-bottom: 0.75rem;
+  font-size: .75rem;
+}
+
+ 
+.posts .post-categories * {
+  display: inline-block;
+}
+
+ 
+.posts .post-categories li {
+  margin-bottom: 0.2rem;
+}
+ 
+.posts .post-categories a {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  line-height: normal;
+  background: all 0.1s;
+}
+ 
+.posts .post-categories a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+/* цвета для тэгов */
+.post-categories .tag1 {
+    color: #5a0007; /* Цвет для первого тега */
+    background-color: rgba(254, 72, 77, 0.5); /* Цвет фона для первого тега */
+    border: none; /* Убираем рамку */
+}
+
+.post-categories .tag2 {
+    color: #670301; /* Цвет для второго тега */
+    background-color: rgba(239, 7, 2, 0.5); /* Цвет фона для второго тега */
+    border: none; /* Убираем рамку */
+}
+.post-categories .tag3 {
+    color: #841000; /* Цвет для второго тега */
+    background-color: rgba(255, 92, 69, 0.5); /* Цвет фона для второго тега */
+    border: none; /* Убираем рамку */
+}
+.post-categories .tag4 {
+    color: #b22b00; /* Цвет для второго тега */
+    background-color: rgba(255, 92, 40, 0.5); /* Цвет фона для второго тега */
+    border: none; /* Убираем рамку */
+}
+.post-categories .tag5 {
+    color: #812e00; /* Цвет для второго тега */
+    background-color: rgba(255, 129, 59, 0.5); /* Цвет фона для второго тега */
+    border: none; /* Убираем рамку */
+}
+.post-categories .tag6 {
+    color: #a14c00; /* Цвет для второго тега */
+    background-color: rgba(255, 162, 79, 0.5); /* Цвет фона для второго тега */
+    border: none; /* Убираем рамку */
+}
+.post-categories .tag7 {
+    color: #aa6000; /* Цвет для второго тега */
+    background-color: rgba(255, 170, 60, 0.5); /* Цвет фона для второго тега */
+    border: none; /* Убираем рамку */
+}
+ 
+@media screen and (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+ 
+@media screen and (max-width: 650px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+[value="All"]:checked ~ .posts [data-category] {
+  display: block;
+}
+[value="mag"]:checked ~ .posts .post:not([data-category*="mag"]),
+[value="sklad"]:checked ~ .posts .post:not([data-category*="sklad"]),
+[value="office"]:checked ~ .posts .post:not([data-category*="office"]),
+[value="carier"]:checked ~ .posts .post:not([data-category*="carier"]),
+[value="expless"]:checked ~ .posts .post:not([data-category*="expless"]),
+[value="fast"]:checked ~ .posts .post:not([data-category*="fast"]),
+[value="night"]:checked ~ .posts .post:not([data-category*="night"]) {
+  display: none;
+}
+:root {
+  --black: #1a1a1a;
+  --white: #fff;
+  --green: #49b293;
+}
+ 
+[value="All"]:checked ~ .filters [for="All"],
+[value="mag"]:checked ~ .filters [for="mag"],
+[value="sklad"]:checked ~ .filters [for="sklad"],
+[value="office"]:checked ~ .filters [for="office"],
+[value="carier"]:checked ~ .filters [for="carier"],
+[value="expless"]:checked ~ .filters [for="expless"],
+[value="night"]:checked ~ .filters [for="night"],
+[value="fast"]:checked ~ .filters [for="fast"] {
+  background: #FF4040;
+  color: var(--white);
+}
+input[type="radio"] {
+  display: none;
+}
+
+
+}
+.post-categories {
+  display: flex;
+  flex-direction: column; /* Размещаем теги в столбец */
+  justify-content: flex-end; /* Выравниваем их к нижнему краю */
+  margin-top: 1rem; /* Добавляем расстояние сверху */
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Дополнительные стили для отдельных тегов */
+.post-categories li {
+  margin-right: 0.5rem; /* Отступ между тэгами */
+  margin-top: 0.5rem; /* Отступ сверху каждого тега */
+  padding: 0.5rem 1rem; /* Внутренний отступ */
+  border-radius: 0.5rem; /* Закругленная рамка */
+  background-color: #fff; /* Фон */
+  color: #49b293; /* Цвет текста */
+  font-size: 0.8rem; /* Размер шрифта */
+  line-height: 1.5; /* Межстрочное расстояние */
+  border: 1px solid #ddd; /* Граница */
+}
+.post-title {
+  font-size: 1.5rem; /* Увеличиваем размер шрифта */
+}
+.post {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 2rem;
+  margin-right: 10px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end; /* Прижатие к верхнему краю */
+}
+
+/* popUps */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+.popup_body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.popup_content {
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 600px;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.popup_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+.popup_title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.popup_text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.popup_image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.popup_button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF4040;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.popup_button:hover {
+    background-color: #A60000;
+    text-decoration: none;
+    color: #fff;
+}
+.ashka {
+  text-decoration: none;
+  color: #000;
+}
